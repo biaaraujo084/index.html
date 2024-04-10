@@ -1,6 +1,6 @@
 http://127.0.0.1:5500/img/img.html
 
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <script>
@@ -17,9 +17,10 @@ if ($idade < 18)
     if($sexo=="feminino"){
         document.write("menina")
     }
-    else{
-        document.write("escreva masculino ou feminino")
-    }
+//erro
+   // else{
+    //    document.write("escreva masculino ou feminino")
+    //}
 }
 else{
 
@@ -30,9 +31,10 @@ else{
     if($sexo=="feminino"){
         document.write("mulher")
     }
-    else{
-        document.write("escreva masculino ou feminino")
-    }
+//erro
+  //  else{
+  //      document.write("escreva masculino ou feminino")
+  //  }
 }
 
 
