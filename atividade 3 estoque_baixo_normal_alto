@@ -12,14 +12,20 @@ http://127.0.0.1:5500/index.html
 </body>
 </html>
 <script>
-    $quantidade = prompt ("Quantas peças possui no estoque?")
+    document.write(" <center> <font color='red' size='7'>  classificação do estoque </font>")
+                document.write("<table border='1' width='600'>")
+                document.write("<tr bgcolor='#9932CC' align='center'>")
+                document.write(" <td width='350' align='center'><B>Classificação</B></td>")
+                document.write(" </tr>")
+                document.write(" <tr>")
+                document.write("<td>")
+     $quantidade = prompt ("Quantas peças possui no estoque?")
     if($quantidade < 50) 
-    document.write(" <center> Resultado: Baixo")
+    document.write(" <center>  Baixo")
     else 
     if($quantidade < 100)
-    document.write("<center> Resultado : Normal")
+    document.write("<center>  Normal")
     else
-    document.write("<center> Resultado: Alto")
-    
+    document.write("<center>  Alto")
    
 </script>
