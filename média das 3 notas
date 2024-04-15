@@ -16,5 +16,6 @@ http://127.0.0.1:5500/index.html
     $num2 = prompt ("Insira a segunda nota")
     $num3 = prompt ("Insira a terceira nota")
     $media = ((parseInt($num1)+parseInt($num2)+parseInt($num3)) / 3) 
-    document.write("A média foi:" + $media);
+   document.write("<center> A média foi:" + $media + "</center>");
+   
 </script>
