@@ -6,13 +6,19 @@
     <title>Document</title>
     
     <script>
-       for($x = 0; $x < 20; $x++)
-       {
-        document.write("<br>valor do x é: " + $x)
-       }
-    </script>
-</head>
-<body>
+document.write("<h1 size = '4'><h1>")
+    $y = prompt("Digite um número:")
 
-</body>
+    for ($x =0; $x <= $y ; $x++)
+    {
+        if ($x % 2 == 0) 
+        {
+            document.write("<br>valor do x é: " , $x, " - par")
+        }
+        else
+        {
+            document.write("<br>valor do x é: " , $x, " - ímpar")
+        }
+    }
+</script>
 </html>
