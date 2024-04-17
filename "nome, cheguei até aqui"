@@ -1,0 +1,64 @@
+<<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+    function senai()
+    {
+        $nome = this.form1.fnome.value;
+        document.write ($nome + ",Cheguei até aqui!");
+        return false;
+    }
+</script>
+
+</head>
+<body>
+    <form name= "form1" method = "post" action="" onsubmit = "return senai()" >
+        nome: <input type = "text" name = "fnome" > <br>
+        idade: <input type ="text" name = "fidade"> <br>
+        Sexo: 
+        Masculino <input type = "radio" name= "Masc" value ="masc">
+        Feminino <input type = "radio" name= "Masc" value ="fem">
+        Cidade: <input type="text" name="fCidade" size="50" maxlength="50"> <br>
+        Estado:                                   
+        <select name="fEstado">
+            <option value="emBranco">Escolha uma opção abaixo:</option>
+            <option value="acre">AC</option>
+            <option value="alagoas">AL</option>
+            <option value="amapa">AP</option>
+            <option value="amazonas">AM</option>
+            <option value="bahia">BA</option>
+            <option value="ceara">CE</option>
+            <option value="distrito federal">DF</option>
+            <option value="espirito santo">ES</option>
+            <option value="goias">GO</option>
+            <option value="maranhao">MA</option>
+            <option value="mato grosso">MT</option>
+            <option value="mato grosso do sul">MS</option>
+            <option value="minas gerais">MG</option>
+            <option value="para">PA</option>
+            <option value="paraiba">PB</option>
+            <option value="parana">PR</option>
+            <option value="pernambuco">PE</option>
+            <option value="piaui">PI</option>
+            <option value="rio de janeiro">RJ</option>
+            <option value="rio grande do norte">RN</option>
+            <option value="rio grande do sul">RS</option>
+            <option value="rondonia">RO</option>
+            <option value="roraima">RR</option>
+            <option value="santa catarina">SC</option>
+            <option value="sao paulo">SP</option>
+            <option value="sergipe">SE</option>
+            <option value="tocantins">TO</option>
+        </select>
+        <br>
+        <input type ="submit" value = "gravar">
+        <input type="reset" value="Limpar">
+    </form>
+
+        </body>
+</html>
