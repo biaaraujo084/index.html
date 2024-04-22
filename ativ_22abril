@@ -1,0 +1,149 @@
+*INDEX.HTML*
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   
+    <script>
+
+
+        function senai() 
+     
+        {  
+        
+            $login = this.Form1.flogin.value;
+
+            $senha = this.Form1.fSenha.value;
+            
+            
+            if (($login == "SENAI") && ($senha == "12345678")){
+                window.location.href ="formulario.html"
+                return false;
+               
+            
+
+            }
+            else {
+
+                document.write("<center>")
+                window.location.href = "erro.html"
+                document.write("</center>")
+                return false;
+            }
+        }
+
+
+    </script>
+</head>
+
+<body bgcolor='#8B008B'>>
+    <Font color="#FFFFFF" size="6"> 
+    <center> <h1> LOGIN </h1>     
+    <form name="Form1" action="" method="post" onsubmit="return senai()">
+
+        Usuário: <input type="text" name="flogin" size="23"> <br> <br>
+
+        Senha: <input type="password" name="fSenha" size="23"> <br>
+        <br>
+
+
+        <input type="submit" value="GRAVAR">
+
+</center>
+    </form>
+
+</body>
+
+</html>
+
+*ERRO.HTML*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+
+<body>
+<center>
+        <h1> LOGIN OU SENHA INCORRETOS <br>
+        <img src ="img/acesso negado.jpg"><br>
+        <a href="index.html">Voltar para o login</a>
+
+</body>
+</html>
+
+
+*FORMULARIO.HTML*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <script>
+        document.write("<center><br>")
+        document.write("<Font color='FFFFFF' size='3'><h1> BEM VINDO[A]!<br>")
+        document.write("<Font color='FFFFFF' size='3'>preencha o formalário abaixo")
+        document.write("</center>")
+    </script>
+
+<body bgcolor='#C71585'>
+    <Font color="#FFFFFF" size="4"> 
+        <center>    
+        <form name="Form1" action="" method="post" onsubmit="return senai()">
+
+    
+
+             Nome: <input type="text" name="fnome" size="30"> <br>
+
+            Idade: <input type="text" name="fidade" size="3">  sexo: Masc <input type = "radio" name= "Masc" value ="masc">
+            Fem <input type = "radio" name= "Masc" value ="fem">
+            <br><br>
+    
+            Professor 1: <input type="text" professor="fprofessor1" size="9"> <BR>
+
+            Professor 2: <input type="text" professor="fprofessor2" size="9"> <br>
+
+            Curso: <select name = "festado" ><br>
+                <option value = "Em branco" >escolha uma opcão abaixo:</option> 
+                <option value = "DS" > DESENVOLVIMENTO DE SISTEMAS </option>
+                <option value = "MECANICA" > MECANICA </option>
+                <option value = "SOLDA" > SOLDAGEM </option>
+                </select> <br>
+
+            Turno: <select name = "fturno" ><br>
+            <option value = "Em branco" >escolha uma opcão abaixo:</option> 
+            <option value = "integral"> Integral </option>
+            <option value = "manhã" > Manhã </option>
+            <option value = "tarde" > Tarde </option>
+            <option value = "noite" > Noite </option>
+            </select> <br><br>
+
+            <tr>
+                <td><b>Disciplina que mais gosta: <br>
+                <input type="checkbox" name= "html"> HMTL <br>
+                <input type="checkbox" name= "javascript"> Java script <br>
+                <input type="checkbox" name= "arduino"> Arduino <br>
+                <input type="checkbox" name= "logica"> Lógica <br>
+                <input type="checkbox" name= "gestalt"> Gestalt <br>
+                </b></td></tr>
+
+                <tr>
+
+            <input type ="submit" value = "gravar">
+            <input type ="reset" value = "limpar">
+
+    
+</body>
+</html>
